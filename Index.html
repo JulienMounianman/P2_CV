@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+<title>CV - Julien Mounianman</title>
+</head>
+<style type="text/css">
+.Marge {
+  background-color: #FEBF18;
+  height: 100%;
+  width: 25%;
+}
+.Content {
+  width: 75%;
+  height: 100%;
+  padding:5%;
+}
+.Box {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.roundedImage{
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin:10%;
+}
+img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+/* Bonus : keep aspect-ratio */
+img {
+  object-fit: cover;
+  object-position: right center;
+}
+.titre-marge {
+  background-color: #514F4A;
+  color: #FEBF18;
+  text-align: center;
+  font-size: x-large;
+}
+.loisirs {
+  text-align: center;
+}
+.contact {
+  margin-bottom:10%;
+}
+</style>
+<body class="Box">
+  <div class="Marge" >
+    <div class="roundedImage">
+       <img src="img/pp.jpg" alt="img" />
+    </div>
+    <h2 class="titre-marge">CONTACT</h2>
+      <div>
+        <div  class="contact">
+          Adresse <br>
+          Paris, France <br>
+        </div>
+        <div  class="contact">
+          Téléphone <br>
+          06 00 00 00 00 <br>
+        </div>
+        <div  class="contact">
+          Email <br>
+          nom@email.com <br>
+        </div>
+        <div class="contact">
+          Site Web <br>
+          www.name.com <br>
+        </div>
+        <div class="contact">
+          Skype <br>
+          @nom_dutilisateur <br>
+        </div>
+      </div>
+    <h2 class="titre-marge">A PROPOS DE MOI</h2>
+      <p> Ego vero sic intellego, Patres conscripti, nos hoc tempore in provinciis decernendis perpetuae pacis habere oportere rationem.
+          Nam quis hoc non sentit omnia alia esse nobis vacua ab omni periculo atque etiam suspicione belli?
+          Hacque adfabilitate confisus cum eadem postridie feceris, ut incognitus haerebis et repentinus, hortatore illo hesterno clientes numerando,
+      </p>
+    <h2 class="titre-marge">LOISIRS</h2>
+    <div class="loisirs">
+      <i class="fas fa-swimmer imgtest"></i>
+      <i class="fas fa-bicycle"></i>
+      <i class="fas fa-table-tennis"></i>
+  </div>
+  </div>
+  <div class="Content">
+    <div style="margin-bottom:5%">
+      <h1><span style="color:#FEBF18;">Julien</span> Mounianman</h1>
+      <p><span style="text-decoration: underline #FEBF18;">Dével</span>oppeur Web</p>
+    </div>
+    <h2> <i class="fas fa-graduation-cap"></i> FORMATION </h2>
+    <hr>
+      <ul>
+        <li>2016-2017 <p>OPENCLASSROOMS</p></li>
+        <li>2014-2016 <p>UNIVERSITY</p></li>
+      </ul>
+    <h2> <i class="fas fa-briefcase"></i> EXPERIENCE PROFESSIONELLE</h2>
+    <hr>
+      <ul>
+        <li>Mars 2018<p>DESIGN INC</p></li>
+        <li>Mars 2018<p>Design INC</p></li>
+        <li>Mars 2018<p>Design INC</p></li>
+      </ul>
+      <h2> <i class="fas fa-pencil-alt"></i> RECOMMANDATIONS</h2>
+      <hr>
+  </div>
+</body>
+</html>
