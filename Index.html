@@ -1,99 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+<meta name="viewport" content="width=device-width" />
+<link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 <title>CV - Julien Mounianman</title>
 </head>
-<style type="text/css">
-body {
-  display: flex;
-  background-color: grey;
-  justify-content: center;
-}
-.Marge {
-  background-color: #FEBF18;
-  height: 100%;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.Content {
-  width: 75%;
-  height: 100%;
-  padding:5%;
-}
-.Box {
-  display: flex;
-  max-width: 800px;
-  background-color: white;
-}
-.roundedImage{
-  display: inline-block;
-  width: 90%;
-  border-radius: 50%;
-  overflow: hidden;
-  margin:10%;
-}
-img {
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-}
-/* Bonus : keep aspect-ratio */
-img {
-  object-fit: cover;
-  object-position: right center;
-}
-.loisirs {
-  text-align: center;
-}
-.contact {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
-    
-}
-#contact {
-  margin-bottom:10%;
-}
-.titre-marge {
-  background-color: #514F4A;
-  color: #FEBF18;
-  text-align: center;
-  font-size: x-large;
-}
-.Formation {
-  display: flex;
-  margin-bottom: 5%;
-}
-#Formation {
-  width: 45%;
-}
-#Formation2 {
-  width: 55%;
-}
-.recommandations {
-  display: flex;
-  margin-top: 5%;
-}
-#r1 {
-  width: 55%;
-}
-#r2 {
-  width: 45%;
-}
-#police1 {
-  font-size: small;
-}
-#police2 {
-
-}
-#police3 {
-
-}
-</style>
 <body>
   <div class="Box">
     <div class="Marge" >
@@ -102,28 +14,28 @@ img {
       </div>
         <h2 class="titre-marge">CONTACT</h2>
           <div class="contact">
-              <div  id="contact">
+              <div class="contact_info">
                 Adresse <br>
                 Paris, France <br>
               </div>
-              <div  id="contact">
+              <div class="contact_info">
                 Téléphone <br>
                 06 00 00 00 00 <br>
               </div>
-              <div  id="contact">
+              <div class="contact_info">
                 Email <br>
                 nom@email.com <br>
               </div>
-              <div id="contact">
+              <div class="contact_info ">
                 Site Web <br>
                 www.name.com <br>
               </div>
-              <div>
+              <div class="contact_info ">
                 Skype <br>
                 @nom_dutilisateur <br>
               </div>
           </div>
-        <h2 class="titre-marge">A PROPOS DE MOI</h2>
+        <h2 class="titre-marge">À PROPOS DE MOI</h2>
         <div class="contact">
           <p id="police1"> Ego vero sic intellego, Patres conscripti, nos hoc tempore in provinciis decernendis perpetuae pacis habere oportere rationem.
               Nam quis hoc non sentit omnia alia esse nobis vacua ab omni periculo atque etiam suspicione belli?
@@ -132,9 +44,9 @@ img {
         </div>
         <h2 class="titre-marge">LOISIRS</h2>
         <div class="loisirs">
-          <i class="fas fa-swimmer imgtest"></i>
-          <i class="fas fa-bicycle"></i>
-          <i class="fas fa-table-tennis"></i>
+          <i class="fas fa-swimmer fa-2x" style="color:#514F4A;"></i>
+          <i class="fas fa-bicycle fa-2x" style="color:#514F4A;"></i>
+          <i class="fas fa-table-tennis fa-2x" style="color:#514F4A;"></i>
         </div>
     </div>
     <div class="Content">
@@ -142,8 +54,7 @@ img {
         <h1><span style="color:#FEBF18;">Julien</span> Mounianman</h1>
         <p><span style="text-decoration: underline #FEBF18;">Dével</span>oppeur Web</p>
       </div>
-      <h2> <i class="fas fa-graduation-cap"></i> FORMATION </h2>
-      <hr>
+      <h2> <i class="fas fa-graduation-cap" style="color: #FEBF18;margin-right:4%;"></i> FORMATION <hr> </h2>
         <ul>
           <li>
             <div class="Formation">
@@ -178,8 +89,7 @@ img {
             </div>
           </li>
         </ul>
-      <h2> <i class="fas fa-briefcase"></i> EXPERIENCE PROFESSIONELLE</h2>
-      <hr>
+      <h2> <i class="fas fa-briefcase" style="color: #FEBF18;margin-right:4%;"></i> EXPERIENCE PROFESSIONELLE <hr></h2>
         <ul>
           <li>
             <div class="Formation">
@@ -230,8 +140,7 @@ img {
             </div>
           </li>
         </ul>
-        <h2> <i class="fas fa-pencil-alt"></i> RECOMMANDATIONS</h2>
-        <hr>
+        <h2> <i class="fas fa-pencil-alt" style="color: #FEBF18;margin-right:4%;"></i> RECOMMANDATIONS <hr></h2>
         <div class="recommandations">
           <div id="r1">
               MAXIME KIEMAN <br>
