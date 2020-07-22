@@ -82,6 +82,14 @@ img {
 hr {
   border-top: 1px solid #FEBF18;
 }
+.hidden_title {
+  opacity: 0%;
+  height: 0%;
+  width: 0%;
+}
+.title {
+  margin-bottom:5%;
+}
 @media all and (max-device-width: 480px)
 {
   .Content {
@@ -137,10 +145,16 @@ hr {
   p,  {
     font-size: xx-small;
   }
+  .Formation {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   #Formation {
+    width: auto;
     font-size: xx-small;
   }
   #Formation2 {
+    width: auto;
     font-size: xx-small;
   }
   .recommandations {
@@ -148,5 +162,16 @@ hr {
   }
   .titre-marge {
     font-size: x-small;
+  }
+  .hidden_title {
+    opacity: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .title {
+    opacity: 0%;
+    height: 0%;
+    width: 0%;
   }
 }
