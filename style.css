@@ -49,6 +49,7 @@ img {
 }
 .contact_info {
   margin-bottom:10%;
+  word-wrap: break-word;
 }
 .titre-marge {
   background-color: #514F4A;
@@ -60,10 +61,10 @@ img {
   display: flex;
   margin-bottom: 5%;
 }
-#Formation {
+.Formation_1 {
   width: 45%;
 }
-#Formation2 {
+.Formation_2{
   width: 55%;
 }
 .recommandations {
@@ -76,7 +77,7 @@ img {
 #r2 {
   width: 45%;
 }
-#police1 {
+.police1 {
   font-size: small;
 }
 hr {
@@ -130,7 +131,7 @@ hr {
     flex-direction: column;
     width:80%;
   }
-  #police1 {
+  .police1 {
     font-size: xx-small;
   }
   .contact {
@@ -149,11 +150,11 @@ hr {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #Formation {
+  .Formation_1 {
     width: auto;
     font-size: xx-small;
   }
-  #Formation2 {
+  .Formation_2 {
     width: auto;
     font-size: xx-small;
   }
