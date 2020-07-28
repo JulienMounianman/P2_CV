@@ -3,30 +3,18 @@ body {
   background-color: grey;
   justify-content: center;
 }
-.Marge {
+.Main {
+  display: flex;
+  max-width: 800px;
+  background-color: white;
+}
+.Margin {
   background-color: #FEBF18;
   height: 100%;
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.Content {
-  width: 75%;
-  height: 100%;
-  padding:5%;
-}
-.Box {
-  display: flex;
-  max-width: 800px;
-  background-color: white;
-}
-.roundedImage{
-  display: inline-block;
-  width: 90%;
-  border-radius: 50%;
-  overflow: hidden;
-  margin:10%;
 }
 img {
   width: inherit;
@@ -38,104 +26,173 @@ img {
   object-fit: cover;
   object-position: right center;
 }
-.loisirs {
-  text-align: center;
+.RoundedImage{
+  display: inline-block;
+  width: 90%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin:10%;
 }
-.contact {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
+.Hidden_title {
+  opacity: 0%;
+  height: 0%;
+  width: 0%;
 }
-.contact_info {
-  margin-bottom:10%;
-  word-wrap: break-word;
-}
-.titre-marge {
+.Margin_title {
   background-color: #514F4A;
   color: #FEBF18;
   text-align: center;
   font-size: x-large;
 }
+.Contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.Contact_info {
+  margin-bottom:10%;
+  word-wrap: break-word;
+}
+.About_me {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.Hobbies {
+  text-align: center;
+}
+.Content {
+  width: 75%;
+  height: 100%;
+  padding:5%;
+}
+.Title {
+  margin-bottom:5%;
+}
 .Formation {
   display: flex;
   margin-bottom: 5%;
 }
-.Formation_1 {
+.Formation_date {
   width: 45%;
 }
-.Formation_2{
+.Formation_info{
   width: 55%;
 }
-.recommandations {
+.Professional_experience {
+  display: flex;
+  margin-bottom: 5%;
+}
+.Professional_exp_date {
+  width: 45%;
+}
+.Professional_exp_info{
+  width: 55%;
+}
+.Recommandations {
   display: flex;
   margin-top: 5%;
 }
-#r1 {
-  width: 55%;
+.Recommandations_info {
+  width: 50%;
+  margin-left: 5%;
 }
-#r2 {
-  width: 45%;
-}
-.police1 {
+.Police_small {
   font-size: small;
 }
 hr {
   border-top: 1px solid #FEBF18;
 }
-.hidden_title {
-  opacity: 0%;
-  height: 0%;
-  width: 0%;
-}
-.title {
-  margin-bottom:5%;
-}
 @media all and (max-device-width: 480px)
 {
-  .Content {
+  .Main {
+    flex-direction: column;
+    width:80%;
+  }
+  .Margin {
     width: auto;
   }
-  .Formation {
-    flex-wrap: wrap;
-  }
+  .RoundedImage {
+    width: 20%;
+    border-radius: 50%;
+    margin: 0 auto;
+    }
   img {
     width: 100%;
     height: auto;
     border-radius: auto;
   }
-  .contact_info {
+  .Hidden_title {
+    opacity: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .Margin_title {
+    height: auto;
+    font-size: x-small;
+  }
+  .Contact_info {
     margin-right: 5%;
     margin-bottom: 5%;
   }
-  .contact {
+  .Contact {
     flex-direction: row;
     margin-left: 10%;
     margin-right: 10%;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    font-size: xx-small;
     }
-  .roundedImage {
-    width: 20%;
-    border-radius: 50%;
-    margin: 0 auto;
-    }
-  .titre-marge {
-    height: auto;
-  }
-  .Marge {
-    width: auto;
-  }
-  .Box {
-    flex-direction: column;
-    width:80%;
-  }
-  .police1 {
+  .About_me {
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     font-size: xx-small;
   }
-  .contact {
-      font-size: xx-small;
+  .Content {
+    width: auto;
+  }
+  .Title {
+    opacity: 0%;
+    height: 0%;
+    width: 0%;
+  }
+  .Formation {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Formation_date {
+    width: auto;
+    font-size: xx-small;
+  }
+  .Formation_info {
+    width: auto;
+    font-size: xx-small;
+  }
+  .Professional_experience {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Professional_exp_date {
+    width: auto;
+    font-size: xx-small;
+  }
+  .Professional_exp_info{
+    width: auto;
+    font-size: xx-small;
+  }
+  .Recommandations {
+    font-size: x-small;
+  }
+  .Police_small {
+    font-size: xx-small;
   }
   .fa-2x {
     font-size: 1em;
@@ -145,34 +202,5 @@ hr {
   }
   p,  {
     font-size: xx-small;
-  }
-  .Formation {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .Formation_1 {
-    width: auto;
-    font-size: xx-small;
-  }
-  .Formation_2 {
-    width: auto;
-    font-size: xx-small;
-  }
-  .recommandations {
-    font-size: x-small;
-  }
-  .titre-marge {
-    font-size: x-small;
-  }
-  .hidden_title {
-    opacity: 100%;
-    width: auto;
-    height: auto;
-    text-align: center;
-  }
-  .title {
-    opacity: 0%;
-    height: 0%;
-    width: 0%;
   }
 }
