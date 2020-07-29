@@ -34,9 +34,7 @@ img {
   margin:10%;
 }
 .Hidden_title {
-  opacity: 0%;
-  height: 0%;
-  width: 0%;
+  display: none;
 }
 .Margin_title {
   background-color: #514F4A;
@@ -101,11 +99,15 @@ img {
 }
 .Police_small {
   font-size: small;
+  margin: 0;
 }
 hr {
   border-top: 1px solid #FEBF18;
 }
-@media all and (max-device-width: 480px)
+i {
+  color: #514F4A;
+}
+@media all and (max-width: 480px)
 {
   .Main {
     flex-direction: column;
@@ -115,20 +117,16 @@ hr {
     width: auto;
   }
   .RoundedImage {
-    width: 20%;
     border-radius: 50%;
     margin: 0 auto;
     }
   img {
-    width: 100%;
+    width: 20%;
     height: auto;
-    border-radius: auto;
   }
   .Hidden_title {
-    opacity: 100%;
-    width: auto;
-    height: auto;
     text-align: center;
+    display: block;
   }
   .Margin_title {
     height: auto;
@@ -200,7 +198,11 @@ hr {
   h1, h2 {
     font-size: x-small;
   }
-  p,  {
+  p {
     font-size: xx-small;
+  }
+  figure.RoundedImage {
+    text-align: center;
+    width: 100%;
   }
 }
