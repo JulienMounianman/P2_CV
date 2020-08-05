@@ -107,6 +107,16 @@ hr {
 i {
   color: #514F4A;
 }
+h1 span {
+  color:#FEBF18;
+}
+h2 i {
+  color: #FEBF18;
+  margin-right:4%;
+}
+header p span {
+  text-decoration: underline #FEBF18;
+}
 @media all and (max-width: 480px)
 {
   .Main {
