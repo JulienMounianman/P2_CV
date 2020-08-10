@@ -17,21 +17,22 @@ body {
   justify-content: space-between;
 }
 img {
+  /*
   width: inherit;
   height: inherit;
+  */
   border-radius: inherit;
-}
-/* Bonus : keep aspect-ratio */
-img {
-  object-fit: cover;
-  object-position: right center;
+  width: 80%;
 }
 .RoundedImage{
-  display: inline-block;
-  width: 90%;
   border-radius: 50%;
+  margin: 5%;
+  text-align: center;
+  /*
+  display: inline-block;
   overflow: hidden;
   margin:10%;
+  */
 }
 .Hidden_title {
   display: none;
@@ -168,9 +169,7 @@ header p span {
     width: auto;
   }
   .Title {
-    opacity: 0%;
-    height: 0%;
-    width: 0%;
+    display: none;
   }
   .Formation {
     flex-direction: column;
