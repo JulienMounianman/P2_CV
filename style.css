@@ -76,6 +76,7 @@ img {
 }
 .Formation_date {
   width: 45%;
+  margin: 0;
 }
 .Formation_info{
   width: 55%;
@@ -86,6 +87,7 @@ img {
 }
 .Professional_exp_date {
   width: 45%;
+  margin: 0;
 }
 .Professional_exp_info{
   width: 55%;
@@ -96,7 +98,9 @@ img {
 }
 .Recommandations_info {
   width: 50%;
-  margin-left: 5%;
+}
+.Recommandations_info h4 {
+  margin: 0;
 }
 .Police_small {
   font-size: small;
@@ -118,11 +122,13 @@ h2 i {
 header p span {
   text-decoration: underline #FEBF18;
 }
+h4 {
+  font-weight: normal;
+}
 @media all and (max-width: 480px)
 {
   .Main {
     flex-direction: column;
-    width:80%;
   }
   .Margin {
     width: auto;
